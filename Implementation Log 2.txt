@@ -1,0 +1,15 @@
+Date: 13/01
+What was done:
+> Created the 'vgamode' system call and implemented it into the draw command. This allowed for the user to switch to the VGA mode 0x13 when the command 'draw' was typed into the console. 
+Time taken: 4hrs
+
+Date: 14/01
+What was done:
+> Added an additonal 'textmode' system call that switched the vga mode back to the text mode once the draw process had completed, I will make this happen on user input later.
+> Made a system call that's called in the 'draw' command that changes the field to black after setting the VGAmode to 0x13.
+Time taken: 2.5hrs
+
+Date: 15/01
+What was done:
+> Completed the drawline system call - this draws lines in the 0x13 VGA mode, I have added variation within the loop in draw.c to make the lines change angle and colour.
+Time taken: 5hrs
